@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "dhtviz"
+version = "0.1.0"
+description = "Visualize environmental data reported from dhtlog and stored in Postgres database."
+authors = ["tomhata <tomhata@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^1.3.4"
+dash = "^2.0.0"
+python-dotenv = "^0.19.2"
+psycopg2 = "^2.9.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^21.11-beta.1"
+flake8 = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
