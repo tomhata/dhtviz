@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dhtviz"
-version = "0.1.0"
+version = "1.0.0"
 description = "Visualize environmental data reported from dhtlog and stored in Postgres database."
 authors = ["tomhata <tomhata@gmail.com>"]
 readme = "README.md"
