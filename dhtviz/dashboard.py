@@ -24,7 +24,7 @@ def get_traces():
         user=os.getenv("SQL_USER"),
         password=os.getenv("SQL_PASSWORD"),
     )
-    query = f'SELECT * from {os.getenv("SQL_TABLE")}'
+    query = f'SELECT * from {os.getenv("SQL_TABLE")} ORDER BY datetime DESC'
     df = pd.read_sql(query, con=conn)
     trace_t = go.Line(x=df.datetime, y=df.temperature, name="temperature")
     trace_h = go.Line(x=df.datetime, y=df.humidity, name="humidity", yaxis="y2")
