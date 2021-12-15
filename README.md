@@ -22,6 +22,9 @@ Note: This is one-off code for a pet project without much out-of-the box configu
     SQL_TABLE=table
     ```
     The path should resemble `/home/user/dhtviz/.env`
+
+    **IMPORTANT** If you want the script to run automatically on boot via crontab (see below), open `./dhtviz/dhasboard.py` and change the line `load_dotenv(".env")` to `load_dotenv("/absolute/path/to/.env")`
+
 * Open default port for dash
     ```
     # open firewall ports
